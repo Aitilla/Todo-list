@@ -1,0 +1,33 @@
+/* Styling for the root */
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+/* Input field and title */
+#header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Columns */
+#taskCols{
+    display: flex;
+    padding: 15px;
+}
+
+.col{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pending{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+}
