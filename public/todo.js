@@ -1,3 +1,16 @@
+//Database
+const mysql = require('mysql');
+
+const pool = mysql.createPool({
+    host: 'localhost',
+    user: 'your_username',
+    password: 'your_password',
+    database: 'your_database',
+    connectionLimit: 10 
+});
+
+
+
 const allTasks = document.getElementById("all");
 const pendingTasks = document.getElementById("pending");
 const finishedTasks = document.getElementById("done");
@@ -38,4 +51,6 @@ const addTask = document.getElementById("addTask").addEventListener("click", fun
     moveBtn.addEventListener('click', function(){
         moveLogic(newTask);
     });
+
+    return newTask;
 });
