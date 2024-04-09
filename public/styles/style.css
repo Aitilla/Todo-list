@@ -12,7 +12,6 @@ body{
     flex-direction: column;
 }
 
-
 /* Columns */
 #taskCols{
     display: flex;
