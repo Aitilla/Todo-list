@@ -1,0 +1,49 @@
+/* Containers */
+
+#siteContainer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#historyContainer{
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calContainer {
+  border: 2px solid black;
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rows {
+  padding: 2px;
+}
+
+.display{
+    display: flex;
+    padding: 5px;
+}
+
+/* Elements */
+
+#equationDisplay{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.calBtn {
+  font-size: larger;
+  height: 5vh;
+  width: 5vw;
+}

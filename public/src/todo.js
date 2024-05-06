@@ -18,10 +18,10 @@ function createSelection(newTask) {
 
     // Create all the options depending on the objects created in the array above
     options.forEach(option => {
-        const optionElem = document.createElement('option');
-        optionElem.value = option.value;
-        optionElem.textContent = option.text;
-        select.appendChild(optionElem);
+        const optionEl = document.createElement('option');
+        optionEl.value = option.value;
+        optionEl.textContent = option.text;
+        select.appendChild(optionEl);
     });
 
     // If new selection go to the move logic

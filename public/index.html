@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/styles/style.css" />
+    <link rel="stylesheet" href="/public/styles/index.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="siteContainer">
+      <a href="calc.html">calculator</a>
       <div id="header">
         <h1>Todo list</h1>
         <div>
-        <input type="text" placeholder="Write your task here" id="task" />
+        <input type="text" placeholder="Write your task here" id="task" maxlength="25"/>
         <button id="addTask">Add task</button>
       </div>
       </div>
       <div id="taskCols">
         <div id="all" class="col">
-          <h1>All tasks</h1>
+          <h2>All tasks</h2>
         </div>
         <div id="pending" class="col">
-          <h1>Pending</h1>
+          <h2>Pending</h2>
         </div>
         <div id="done" class="col">
-          <h1>Finished</h1>
+          <h2>Finished</h2>
         </div>
       </div>
     </div>
 
-    <script src="/public/todo.js"></script>
+    <script src="/public/src/todo.js"></script>
   </body>
 </html>

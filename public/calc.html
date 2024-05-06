@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles/calc.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html">index</a>
+    <div id="siteContainer">
+
+      <div id="calContainer">
+        <h1>Calculator</h1>
+
+        <div class="display">
+          <span id="equationDisplay">0</span>
+          <button onclick="resetEquation()" class="removeBtn">X</button>
+        </div>
+
+        <div class="rows">
+          <button onclick="addToEquation('7')" class="calBtn">7</button>
+          <button onclick="addToEquation('8')" class="calBtn">8</button>
+          <button onclick="addToEquation('9')" class="calBtn">9</button>
+          <button onclick="addToEquation('*')" class="calBtn">*</button>
+        </div>
+
+        <div class="rows">
+          <button onclick="addToEquation('4')" class="calBtn">4</button>
+          <button onclick="addToEquation('5')" class="calBtn">5</button>
+          <button onclick="addToEquation('6')" class="calBtn">6</button>
+          <button onclick="addToEquation('-')" class="calBtn">-</button>
+        </div>
+
+        <div class="rows">
+          <button onclick="addToEquation('1')" class="calBtn">1</button>
+          <button onclick="addToEquation('2')" class="calBtn">2</button>
+          <button onclick="addToEquation('3')" class="calBtn">3</button>
+          <button onclick="addToEquation('+')" class="calBtn">+</button>
+        </div>
+
+        <div class="rows">
+          <button onclick="addToEquation('=')" class="calBtn">=</button>
+          <button onclick="addToEquation('0')" class="calBtn">0</button>
+          <button onclick="addToEquation(',')" class="calBtn">,</button>
+          <button onclick="addToEquation('/')" class="calBtn">/</button>
+        </div>
+      </div>
+      <div id="historyContainer">
+
+      </div>
+    </div>
+    <script src="/public/src/calculator.js"></script>
+  </body>
+</html>

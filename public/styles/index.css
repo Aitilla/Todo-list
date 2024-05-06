@@ -5,7 +5,13 @@ body{
     justify-content: center;
 }
 
-/* Input field and title */
+/* Containers */
+#taskCols{
+    display: flex;
+    padding: 15px;
+}
+
+/* Titles */
 #header {
     display: flex;
     align-items: center;
@@ -13,20 +19,31 @@ body{
 }
 
 /* Columns */
-#taskCols{
-    display: flex;
-    padding: 15px;
-}
 
 .col{
     padding: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 33%;
+    min-width: 120px;
 }
 
 #pending{
     border-right: 2px solid black;
     border-left: 2px solid black;
 
+}
+
+/* Buttons and fields */
+.buttonStyle{
+    margin-left: 7px;
+    border-radius: 5px;
+}
+
+
+/* Tasks */
+
+.taskStyling{
+    display: inline-block;
 }
